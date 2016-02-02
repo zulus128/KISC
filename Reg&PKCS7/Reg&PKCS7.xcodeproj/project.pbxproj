@@ -24,6 +24,7 @@
 		33C8FA4716D09F5A00F4BFE9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8FA4616D09F5A00F4BFE9 /* QuartzCore.framework */; };
 		33C8FA4916D09F6600F4BFE9 /* lipo_libcptumar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8FA4816D09F6600F4BFE9 /* lipo_libcptumar.a */; };
 		33C8FA4C16D09F7D00F4BFE9 /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8FA4A16D09F7D00F4BFE9 /* common.m */; };
+		7E04D9361C60A04F0002C5CA /* cptumar.reg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04D9351C60A04F0002C5CA /* cptumar.reg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		33C8FA4616D09F5A00F4BFE9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		33C8FA4816D09F6600F4BFE9 /* lipo_libcptumar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lipo_libcptumar.a; path = ../common/lipo_libcptumar.a; sourceTree = "<group>"; };
 		33C8FA4A16D09F7D00F4BFE9 /* common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = common.m; path = ../../common/common.m; sourceTree = "<group>"; };
+		7E04D9351C60A04F0002C5CA /* cptumar.reg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cptumar.reg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,8 @@
 		33C8FA1716D09F3E00F4BFE9 = {
 			isa = PBXGroup;
 			children = (
-				33C8FA2916D09F3E00F4BFE9 /* Reg */,
+				7E04D9341C60A0260002C5CA /* License */,
+				33C8FA2916D09F3E00F4BFE9 /* Sources */,
 				33C8FA2216D09F3E00F4BFE9 /* Frameworks */,
 				33C8FA2116D09F3E00F4BFE9 /* Products */,
 			);
@@ -100,7 +103,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		33C8FA2916D09F3E00F4BFE9 /* Reg */ = {
+		33C8FA2916D09F3E00F4BFE9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				33C8FA4A16D09F7D00F4BFE9 /* common.m */,
@@ -112,7 +115,7 @@
 				33C8FA3E16D09F3E00F4BFE9 /* GTViewController.xib */,
 				33C8FA2A16D09F3E00F4BFE9 /* Supporting Files */,
 			);
-			name = Reg;
+			name = Sources;
 			path = InitialRegistration;
 			sourceTree = "<group>";
 		};
@@ -128,6 +131,14 @@
 				33C8FA3916D09F3E00F4BFE9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E04D9341C60A0260002C5CA /* License */ = {
+			isa = PBXGroup;
+			children = (
+				7E04D9351C60A04F0002C5CA /* cptumar.reg */,
+			);
+			name = License;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33C8FA2E16D09F3E00F4BFE9 /* InfoPlist.strings in Resources */,
+				7E04D9361C60A04F0002C5CA /* cptumar.reg in Resources */,
 				33C8FA3616D09F3E00F4BFE9 /* Default.png in Resources */,
 				33C8FA3816D09F3E00F4BFE9 /* Default@2x.png in Resources */,
 				33C8FA3A16D09F3E00F4BFE9 /* Default-568h@2x.png in Resources */,
@@ -309,6 +321,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../common\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "kz.gt.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Reg&PKCS7";
 				PROVISIONING_PROFILE = "";

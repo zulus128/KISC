@@ -26,6 +26,23 @@
     self.viewController = [[[GTViewController alloc] initWithNibName:@"GTViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *txtPath = [documentsDirectory stringByAppendingPathComponent:@"cptumar.reg"];
+    
+    if ([fileManager fileExistsAtPath:txtPath] == YES) {
+        [fileManager removeItemAtPath:txtPath error:&error];
+    }
+//    if ([fileManager fileExistsAtPath:txtPath] == NO) {
+    
+    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"cptumar" ofType:@"reg"];
+    [fileManager copyItemAtPath:resourcePath toPath:txtPath error:&error];
+//    }
+    
     return YES;
 }
 
