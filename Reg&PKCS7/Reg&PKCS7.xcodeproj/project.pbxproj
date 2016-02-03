@@ -19,12 +19,15 @@
 		33C8FA3616D09F3E00F4BFE9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 33C8FA3516D09F3E00F4BFE9 /* Default.png */; };
 		33C8FA3816D09F3E00F4BFE9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33C8FA3716D09F3E00F4BFE9 /* Default@2x.png */; };
 		33C8FA3A16D09F3E00F4BFE9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33C8FA3916D09F3E00F4BFE9 /* Default-568h@2x.png */; };
-		33C8FA3D16D09F3E00F4BFE9 /* GTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8FA3C16D09F3E00F4BFE9 /* GTViewController.m */; };
-		33C8FA4016D09F3E00F4BFE9 /* GTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C8FA3E16D09F3E00F4BFE9 /* GTViewController.xib */; };
+		33C8FA3D16D09F3E00F4BFE9 /* GTViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8FA3C16D09F3E00F4BFE9 /* GTViewController1.m */; };
+		33C8FA4016D09F3E00F4BFE9 /* GTViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C8FA3E16D09F3E00F4BFE9 /* GTViewController1.xib */; };
 		33C8FA4716D09F5A00F4BFE9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8FA4616D09F5A00F4BFE9 /* QuartzCore.framework */; };
 		33C8FA4916D09F6600F4BFE9 /* lipo_libcptumar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8FA4816D09F6600F4BFE9 /* lipo_libcptumar.a */; };
 		33C8FA4C16D09F7D00F4BFE9 /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8FA4A16D09F7D00F4BFE9 /* common.m */; };
 		7E04D9361C60A04F0002C5CA /* cptumar.reg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04D9351C60A04F0002C5CA /* cptumar.reg */; };
+		7E144B271C62765800BCC981 /* GTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E144B251C62765800BCC981 /* GTViewController.m */; };
+		7E144B281C62765800BCC981 /* GTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E144B261C62765800BCC981 /* GTViewController.xib */; };
+		7E144B2A1C62832F00BCC981 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E144B291C62832F00BCC981 /* MessageUI.framework */; };
 		7ED68F7E1C626873000D334A /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED68F7C1C626873000D334A /* StartViewController.m */; };
 		7ED68F7F1C626873000D334A /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED68F7D1C626873000D334A /* StartViewController.xib */; };
 /* End PBXBuildFile section */
@@ -46,13 +49,17 @@
 		33C8FA3516D09F3E00F4BFE9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		33C8FA3716D09F3E00F4BFE9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		33C8FA3916D09F3E00F4BFE9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		33C8FA3B16D09F3E00F4BFE9 /* GTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTViewController.h; sourceTree = "<group>"; };
-		33C8FA3C16D09F3E00F4BFE9 /* GTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTViewController.m; sourceTree = "<group>"; };
-		33C8FA3F16D09F3E00F4BFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GTViewController.xib; sourceTree = "<group>"; };
+		33C8FA3B16D09F3E00F4BFE9 /* GTViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTViewController1.h; sourceTree = "<group>"; };
+		33C8FA3C16D09F3E00F4BFE9 /* GTViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTViewController1.m; sourceTree = "<group>"; };
+		33C8FA3F16D09F3E00F4BFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GTViewController1.xib; sourceTree = "<group>"; };
 		33C8FA4616D09F5A00F4BFE9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		33C8FA4816D09F6600F4BFE9 /* lipo_libcptumar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lipo_libcptumar.a; path = ../common/lipo_libcptumar.a; sourceTree = "<group>"; };
 		33C8FA4A16D09F7D00F4BFE9 /* common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = common.m; path = ../../common/common.m; sourceTree = "<group>"; };
 		7E04D9351C60A04F0002C5CA /* cptumar.reg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cptumar.reg; sourceTree = "<group>"; };
+		7E144B241C62765800BCC981 /* GTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTViewController.h; sourceTree = "<group>"; };
+		7E144B251C62765800BCC981 /* GTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTViewController.m; sourceTree = "<group>"; };
+		7E144B261C62765800BCC981 /* GTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTViewController.xib; sourceTree = "<group>"; };
+		7E144B291C62832F00BCC981 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		7ED68F7B1C626873000D334A /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		7ED68F7C1C626873000D334A /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		7ED68F7D1C626873000D334A /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
@@ -63,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E144B2A1C62832F00BCC981 /* MessageUI.framework in Frameworks */,
 				33441A0D1769DDBD0066C9CD /* libiRockey301_ccid.a in Frameworks */,
 				33C8FA4916D09F6600F4BFE9 /* lipo_libcptumar.a in Frameworks */,
 				33441A0B1769DD2E0066C9CD /* ExternalAccessory.framework in Frameworks */,
@@ -97,6 +105,7 @@
 		33C8FA2216D09F3E00F4BFE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E144B291C62832F00BCC981 /* MessageUI.framework */,
 				33441A0C1769DDBD0066C9CD /* libiRockey301_ccid.a */,
 				33C8FA4816D09F6600F4BFE9 /* lipo_libcptumar.a */,
 				33441A0A1769DD2E0066C9CD /* ExternalAccessory.framework */,
@@ -146,9 +155,9 @@
 		7E2762911C6267F500158D49 /* Reg */ = {
 			isa = PBXGroup;
 			children = (
-				33C8FA3B16D09F3E00F4BFE9 /* GTViewController.h */,
-				33C8FA3C16D09F3E00F4BFE9 /* GTViewController.m */,
-				33C8FA3E16D09F3E00F4BFE9 /* GTViewController.xib */,
+				33C8FA3B16D09F3E00F4BFE9 /* GTViewController1.h */,
+				33C8FA3C16D09F3E00F4BFE9 /* GTViewController1.m */,
+				33C8FA3E16D09F3E00F4BFE9 /* GTViewController1.xib */,
 			);
 			name = Reg;
 			sourceTree = "<group>";
@@ -156,6 +165,9 @@
 		7ED68F791C62682A000D334A /* PKCS7 */ = {
 			isa = PBXGroup;
 			children = (
+				7E144B241C62765800BCC981 /* GTViewController.h */,
+				7E144B251C62765800BCC981 /* GTViewController.m */,
+				7E144B261C62765800BCC981 /* GTViewController.xib */,
 			);
 			name = PKCS7;
 			sourceTree = "<group>";
@@ -244,7 +256,8 @@
 				33C8FA3616D09F3E00F4BFE9 /* Default.png in Resources */,
 				33C8FA3816D09F3E00F4BFE9 /* Default@2x.png in Resources */,
 				33C8FA3A16D09F3E00F4BFE9 /* Default-568h@2x.png in Resources */,
-				33C8FA4016D09F3E00F4BFE9 /* GTViewController.xib in Resources */,
+				33C8FA4016D09F3E00F4BFE9 /* GTViewController1.xib in Resources */,
+				7E144B281C62765800BCC981 /* GTViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +271,9 @@
 				33C8FA4C16D09F7D00F4BFE9 /* common.m in Sources */,
 				33C8FA3016D09F3E00F4BFE9 /* main.m in Sources */,
 				33C8FA3416D09F3E00F4BFE9 /* GTAppDelegate.m in Sources */,
+				7E144B271C62765800BCC981 /* GTViewController.m in Sources */,
 				7ED68F7E1C626873000D334A /* StartViewController.m in Sources */,
-				33C8FA3D16D09F3E00F4BFE9 /* GTViewController.m in Sources */,
+				33C8FA3D16D09F3E00F4BFE9 /* GTViewController1.m in Sources */,
 				33A0B5FA17E023AF0071CEC4 /* GTNetwork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,12 +289,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		33C8FA3E16D09F3E00F4BFE9 /* GTViewController.xib */ = {
+		33C8FA3E16D09F3E00F4BFE9 /* GTViewController1.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				33C8FA3F16D09F3E00F4BFE9 /* en */,
 			);
-			name = GTViewController.xib;
+			name = GTViewController1.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -356,6 +370,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InitialRegistration/Reg&PKCS7-Prefix.pch";
 				INFOPLIST_FILE = "InitialRegistration/Reg&PKCS7-Info.plist";
@@ -376,6 +391,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InitialRegistration/Reg&PKCS7-Prefix.pch";
 				INFOPLIST_FILE = "InitialRegistration/Reg&PKCS7-Info.plist";

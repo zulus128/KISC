@@ -7,11 +7,13 @@
 //
 
 #import "StartViewController.h"
+#import "GTViewController1.h"
 #import "GTViewController.h"
 
 @interface StartViewController () {
     
-    GTViewController *aViewController;
+    GTViewController1 *aViewController;
+    GTViewController *bViewController;
 }
 
 @property (retain, nonatomic) IBOutlet UIButton *firstButton;
@@ -30,10 +32,12 @@
     [super viewDidLoad];
     [self.firstButton.titleLabel setTextAlignment: NSTextAlignmentCenter];
     
-    aViewController = [[GTViewController alloc] initWithNibName:@"GTViewController" bundle:nil];
+    aViewController = [[GTViewController1 alloc] initWithNibName:@"GTViewController1" bundle:nil];
+    bViewController = [[GTViewController alloc] initWithNibName:@"GTViewController" bundle:nil];
 }
 
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -45,13 +49,14 @@
 
 - (IBAction)secondButtonClicked:(id)sender {
     
+    [self.view addSubview:bViewController.view];
 }
 
 - (void)dealloc {
     
     [_firstButton release];
-    
     [aViewController release];
+    [bViewController release];
 
     [super dealloc];
 }
