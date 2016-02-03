@@ -25,6 +25,8 @@
 		33C8FA4916D09F6600F4BFE9 /* lipo_libcptumar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8FA4816D09F6600F4BFE9 /* lipo_libcptumar.a */; };
 		33C8FA4C16D09F7D00F4BFE9 /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C8FA4A16D09F7D00F4BFE9 /* common.m */; };
 		7E04D9361C60A04F0002C5CA /* cptumar.reg in Resources */ = {isa = PBXBuildFile; fileRef = 7E04D9351C60A04F0002C5CA /* cptumar.reg */; };
+		7ED68F7E1C626873000D334A /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED68F7C1C626873000D334A /* StartViewController.m */; };
+		7ED68F7F1C626873000D334A /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED68F7D1C626873000D334A /* StartViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,9 @@
 		33C8FA4816D09F6600F4BFE9 /* lipo_libcptumar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lipo_libcptumar.a; path = ../common/lipo_libcptumar.a; sourceTree = "<group>"; };
 		33C8FA4A16D09F7D00F4BFE9 /* common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = common.m; path = ../../common/common.m; sourceTree = "<group>"; };
 		7E04D9351C60A04F0002C5CA /* cptumar.reg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cptumar.reg; sourceTree = "<group>"; };
+		7ED68F7B1C626873000D334A /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		7ED68F7C1C626873000D334A /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		7ED68F7D1C626873000D334A /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +111,10 @@
 		33C8FA2916D09F3E00F4BFE9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				33C8FA4A16D09F7D00F4BFE9 /* common.m */,
-				33A0B5F917E023AF0071CEC4 /* GTNetwork.m */,
-				33C8FA3216D09F3E00F4BFE9 /* GTAppDelegate.h */,
-				33C8FA3316D09F3E00F4BFE9 /* GTAppDelegate.m */,
-				33C8FA3B16D09F3E00F4BFE9 /* GTViewController.h */,
-				33C8FA3C16D09F3E00F4BFE9 /* GTViewController.m */,
-				33C8FA3E16D09F3E00F4BFE9 /* GTViewController.xib */,
+				7ED68F801C6268B9000D334A /* Common */,
+				7ED68F7A1C62683F000D334A /* Start */,
+				7ED68F791C62682A000D334A /* PKCS7 */,
+				7E2762911C6267F500158D49 /* Reg */,
 				33C8FA2A16D09F3E00F4BFE9 /* Supporting Files */,
 			);
 			name = Sources;
@@ -139,6 +141,44 @@
 				7E04D9351C60A04F0002C5CA /* cptumar.reg */,
 			);
 			name = License;
+			sourceTree = "<group>";
+		};
+		7E2762911C6267F500158D49 /* Reg */ = {
+			isa = PBXGroup;
+			children = (
+				33C8FA3B16D09F3E00F4BFE9 /* GTViewController.h */,
+				33C8FA3C16D09F3E00F4BFE9 /* GTViewController.m */,
+				33C8FA3E16D09F3E00F4BFE9 /* GTViewController.xib */,
+			);
+			name = Reg;
+			sourceTree = "<group>";
+		};
+		7ED68F791C62682A000D334A /* PKCS7 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PKCS7;
+			sourceTree = "<group>";
+		};
+		7ED68F7A1C62683F000D334A /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				7ED68F7B1C626873000D334A /* StartViewController.h */,
+				7ED68F7C1C626873000D334A /* StartViewController.m */,
+				7ED68F7D1C626873000D334A /* StartViewController.xib */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
+		7ED68F801C6268B9000D334A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				33C8FA4A16D09F7D00F4BFE9 /* common.m */,
+				33A0B5F917E023AF0071CEC4 /* GTNetwork.m */,
+				33C8FA3216D09F3E00F4BFE9 /* GTAppDelegate.h */,
+				33C8FA3316D09F3E00F4BFE9 /* GTAppDelegate.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33C8FA2E16D09F3E00F4BFE9 /* InfoPlist.strings in Resources */,
+				7ED68F7F1C626873000D334A /* StartViewController.xib in Resources */,
 				7E04D9361C60A04F0002C5CA /* cptumar.reg in Resources */,
 				33C8FA3616D09F3E00F4BFE9 /* Default.png in Resources */,
 				33C8FA3816D09F3E00F4BFE9 /* Default@2x.png in Resources */,
@@ -217,6 +258,7 @@
 				33C8FA4C16D09F7D00F4BFE9 /* common.m in Sources */,
 				33C8FA3016D09F3E00F4BFE9 /* main.m in Sources */,
 				33C8FA3416D09F3E00F4BFE9 /* GTAppDelegate.m in Sources */,
+				7ED68F7E1C626873000D334A /* StartViewController.m in Sources */,
 				33C8FA3D16D09F3E00F4BFE9 /* GTViewController.m in Sources */,
 				33A0B5FA17E023AF0071CEC4 /* GTNetwork.m in Sources */,
 			);

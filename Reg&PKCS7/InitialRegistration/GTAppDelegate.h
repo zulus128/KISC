@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class GTViewController;
+@class StartViewController;
 
 @interface GTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) GTViewController *viewController;
+@property (strong, nonatomic) StartViewController *viewController;
 
 @end

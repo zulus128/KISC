@@ -8,7 +8,7 @@
 
 #import "GTAppDelegate.h"
 
-#import "GTViewController.h"
+#import "StartViewController.h"
 
 @implementation GTAppDelegate
 
@@ -23,7 +23,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[GTViewController alloc] initWithNibName:@"GTViewController" bundle:nil] autorelease];
+    self.viewController = [[[StartViewController alloc] initWithNibName:@"StartViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     

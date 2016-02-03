@@ -19,6 +19,7 @@
 @property (retain, nonatomic) IBOutlet UITextField *textFieldSecret;
 
 @property (retain, nonatomic) IBOutlet UIButton *buttonExecute;
+@property (retain, nonatomic) IBOutlet UIButton *buttonClose;
 
 - (IBAction)execute:(id)sender;
 

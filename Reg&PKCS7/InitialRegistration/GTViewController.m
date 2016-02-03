@@ -36,8 +36,13 @@
     self.buttonExecute.layer.borderColor = [[UIColor blackColor] CGColor];
     self.buttonExecute.layer.borderWidth = 1.0f;
     
-    self.textFieldUserIdentifier.placeholder = [NSString stringWithFormat:@"User identifier. For example: %@", CMP_USER_ID];
-    self.textFieldSecret.placeholder = [NSString stringWithFormat:@"Secret. For example: %@", CMP_USER_SECRET];
+    self.buttonClose.layer.cornerRadius = 10.0f;
+    self.buttonClose.layer.masksToBounds = YES;
+    self.buttonClose.layer.borderColor = [[UIColor blackColor] CGColor];
+    self.buttonClose.layer.borderWidth = 1.0f;
+    
+    self.textFieldUserIdentifier.placeholder = [NSString stringWithFormat:@"ID конверта, например: %@", @"KISCd490775c"/*CMP_USER_ID*/];
+    self.textFieldSecret.placeholder = [NSString stringWithFormat:@"Секрет, например: %@", @"aa7fc547"/*CMP_USER_SECRET*/];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:)name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
@@ -77,6 +82,11 @@
 }
 
 #pragma mark - Events
+
+- (IBAction)close:(id)sender {
+    
+    [self.view removeFromSuperview];
+}
 
 - (IBAction)execute:(id)sender {
     @try {
@@ -254,7 +264,6 @@
     unsigned char *response = NULL;
     @try {
         long size = 8196;
-        //KISCc1483a3f
         unsigned char *request = (unsigned char *) calloc(size + 1, sizeof(unsigned char));
         NSString *requestPath = INITIALIZATION_REQUEST_PATH;
         NSString *responsePath = INITIALIZATION_RESPONSE_PATH;
