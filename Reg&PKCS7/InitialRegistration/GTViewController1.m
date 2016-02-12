@@ -42,10 +42,16 @@
     self.buttonClose.layer.borderWidth = 1.0f;
     
     self.textFieldUserIdentifier.placeholder = [NSString stringWithFormat:@"ID конверта, например: %@", @"KISCd490775c"/*CMP_USER_ID*/];
+    self.textFieldUserIdentifier.text = @"KISCd490775c";
     self.textFieldSecret.placeholder = [NSString stringWithFormat:@"Секрет, например: %@", @"aa7fc547"/*CMP_USER_SECRET*/];
+    self.textFieldSecret.text = @"aa7fc547";
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:)name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
+    
+    NSLog(@"Hex value of CALG_SHA_160_HMAC is 0x%02x", (unsigned int) CALG_SHA_160_HMAC);
+    NSLog(@"Hex value of CALG_CMP_KEY is 0x%02x", (unsigned int) CALG_CMP_KEY);
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -183,12 +189,12 @@
             logMessage(@"CPAcquireContext Error: %0X\n", GetLastErrorCSP(0));
             return -1;
         }
-        // Создание ключа подписи
+        // Создание ключа подписи. ALG_EC256_512G_A is 0xaa3a
         if (!CPGenKey(hProv, CALG_EC256_512G_A, CRYPT_EXPORTABLE, &hKey)) {
             logMessage(@"CPGenKey CALG_EC256_512G_A Error: %0X\n", GetLastErrorCSP(hProv));
             return -1;
         }
-        // Создание ключа экспорта запроса CMP/Initialization Request
+        // Создание ключа экспорта запроса CMP/Initialization Request. CALG_CMP_KEY is 0xa05a
         if (!CPGenKey(hProv, CALG_CMP_KEY, CRYPT_EXPORTABLE, &hExpKey)) {
             logMessage(@"CPGenKey CALG_CMP_KEY Error: %0X\n", GetLastErrorCSP(hProv));
             return -1;
@@ -199,7 +205,7 @@
             logMessage(@"CPSetKeyParam KP_CMP_HASH_ALG Error: %0X\n", GetLastErrorCSP(hProv));
             return -1;
         }
-        // Установка алгоритма защиты с общим секретом
+        // Установка алгоритма защиты с общим секретом. CALG_SHA_160_HMAC is 0x802b
         algId = CALG_SHA_160_HMAC;
         if (!CPSetKeyParam(hProv, hExpKey, KP_CMP_MAC_ALG, (BYTE *)&algId, 0)) {
             logMessage(@"CPSetKeyParam KP_CMP_MAC_ALG Error: %0X\n", GetLastErrorCSP(hProv));
