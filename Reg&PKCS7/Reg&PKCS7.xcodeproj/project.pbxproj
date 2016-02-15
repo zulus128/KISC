@@ -28,6 +28,14 @@
 		7E144B271C62765800BCC981 /* GTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E144B251C62765800BCC981 /* GTViewController.m */; };
 		7E144B281C62765800BCC981 /* GTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E144B261C62765800BCC981 /* GTViewController.xib */; };
 		7E144B2A1C62832F00BCC981 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E144B291C62832F00BCC981 /* MessageUI.framework */; };
+		7EA5C2C71C71E773005A91D9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA5C2C61C71E773005A91D9 /* AssetsLibrary.framework */; };
+		7EA5C2C91C71E77D005A91D9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA5C2C81C71E77D005A91D9 /* CoreText.framework */; };
+		7EA5C2CB1C71E788005A91D9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA5C2CA1C71E788005A91D9 /* MobileCoreServices.framework */; };
+		7EA5C2CD1C71E793005A91D9 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA5C2CC1C71E793005A91D9 /* QuickLook.framework */; };
+		7EA5C2CF1C71E79B005A91D9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA5C2CE1C71E79B005A91D9 /* Security.framework */; };
+		7EA5C2D11C71E7AA005A91D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA5C2D01C71E7AA005A91D9 /* SystemConfiguration.framework */; };
+		7EA5C2D61C71E7CC005A91D9 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA5C2D31C71E7CC005A91D9 /* HockeySDK.framework */; };
+		7EA5C2D71C71E7CC005A91D9 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7EA5C2D51C71E7CC005A91D9 /* HockeySDKResources.bundle */; };
 		7ED68F7E1C626873000D334A /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED68F7C1C626873000D334A /* StartViewController.m */; };
 		7ED68F7F1C626873000D334A /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED68F7D1C626873000D334A /* StartViewController.xib */; };
 /* End PBXBuildFile section */
@@ -60,6 +68,14 @@
 		7E144B251C62765800BCC981 /* GTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTViewController.m; sourceTree = "<group>"; };
 		7E144B261C62765800BCC981 /* GTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTViewController.xib; sourceTree = "<group>"; };
 		7E144B291C62832F00BCC981 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7EA5C2C61C71E773005A91D9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		7EA5C2C81C71E77D005A91D9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7EA5C2CA1C71E788005A91D9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7EA5C2CC1C71E793005A91D9 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		7EA5C2CE1C71E79B005A91D9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7EA5C2D01C71E7AA005A91D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7EA5C2D31C71E7CC005A91D9 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		7EA5C2D51C71E7CC005A91D9 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		7ED68F7B1C626873000D334A /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		7ED68F7C1C626873000D334A /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		7ED68F7D1C626873000D334A /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
@@ -70,8 +86,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA5C2D11C71E7AA005A91D9 /* SystemConfiguration.framework in Frameworks */,
+				7EA5C2CF1C71E79B005A91D9 /* Security.framework in Frameworks */,
+				7EA5C2CD1C71E793005A91D9 /* QuickLook.framework in Frameworks */,
+				7EA5C2CB1C71E788005A91D9 /* MobileCoreServices.framework in Frameworks */,
+				7EA5C2C91C71E77D005A91D9 /* CoreText.framework in Frameworks */,
+				7EA5C2C71C71E773005A91D9 /* AssetsLibrary.framework in Frameworks */,
 				7E144B2A1C62832F00BCC981 /* MessageUI.framework in Frameworks */,
 				33441A0D1769DDBD0066C9CD /* libiRockey301_ccid.a in Frameworks */,
+				7EA5C2D61C71E7CC005A91D9 /* HockeySDK.framework in Frameworks */,
 				33C8FA4916D09F6600F4BFE9 /* lipo_libcptumar.a in Frameworks */,
 				33441A0B1769DD2E0066C9CD /* ExternalAccessory.framework in Frameworks */,
 				33C8FA4716D09F5A00F4BFE9 /* QuartzCore.framework in Frameworks */,
@@ -87,6 +110,7 @@
 		33C8FA1716D09F3E00F4BFE9 = {
 			isa = PBXGroup;
 			children = (
+				7EA5C2D21C71E7CC005A91D9 /* HockeySDK.embeddedframework */,
 				7E04D9341C60A0260002C5CA /* License */,
 				33C8FA2916D09F3E00F4BFE9 /* Sources */,
 				33C8FA2216D09F3E00F4BFE9 /* Frameworks */,
@@ -105,6 +129,12 @@
 		33C8FA2216D09F3E00F4BFE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7EA5C2D01C71E7AA005A91D9 /* SystemConfiguration.framework */,
+				7EA5C2CE1C71E79B005A91D9 /* Security.framework */,
+				7EA5C2CC1C71E793005A91D9 /* QuickLook.framework */,
+				7EA5C2CA1C71E788005A91D9 /* MobileCoreServices.framework */,
+				7EA5C2C81C71E77D005A91D9 /* CoreText.framework */,
+				7EA5C2C61C71E773005A91D9 /* AssetsLibrary.framework */,
 				7E144B291C62832F00BCC981 /* MessageUI.framework */,
 				33441A0C1769DDBD0066C9CD /* libiRockey301_ccid.a */,
 				33C8FA4816D09F6600F4BFE9 /* lipo_libcptumar.a */,
@@ -162,6 +192,24 @@
 			name = Reg;
 			sourceTree = "<group>";
 		};
+		7EA5C2D21C71E7CC005A91D9 /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				7EA5C2D31C71E7CC005A91D9 /* HockeySDK.framework */,
+				7EA5C2D41C71E7CC005A91D9 /* Resources */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
+		7EA5C2D41C71E7CC005A91D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7EA5C2D51C71E7CC005A91D9 /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7ED68F791C62682A000D334A /* PKCS7 */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +251,7 @@
 				33C8FA1C16D09F3E00F4BFE9 /* Sources */,
 				33C8FA1D16D09F3E00F4BFE9 /* Frameworks */,
 				33C8FA1E16D09F3E00F4BFE9 /* Resources */,
+				7EA5C2C51C71E73E005A91D9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -258,10 +307,27 @@
 				33C8FA3A16D09F3E00F4BFE9 /* Default-568h@2x.png in Resources */,
 				33C8FA4016D09F3E00F4BFE9 /* GTViewController1.xib in Resources */,
 				7E144B281C62765800BCC981 /* GTViewController.xib in Resources */,
+				7EA5C2D71C71E7CC005A91D9 /* HockeySDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EA5C2C51C71E73E005A91D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33C8FA1C16D09F3E00F4BFE9 /* Sources */ = {
@@ -368,20 +434,25 @@
 		33C8FA4416D09F3E00F4BFE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InitialRegistration/Reg&PKCS7-Prefix.pch";
 				INFOPLIST_FILE = "InitialRegistration/Reg&PKCS7-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../common\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "kz.gt.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vkassin.kisc;
 				PRODUCT_NAME = "Reg&PKCS7";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "fdae974a-3e9b-46a1-ae53-dafdfa509dda";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,19 +460,24 @@
 		33C8FA4516D09F3E00F4BFE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InitialRegistration/Reg&PKCS7-Prefix.pch";
 				INFOPLIST_FILE = "InitialRegistration/Reg&PKCS7-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../common\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kz.gt.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vkassin.kisc;
 				PRODUCT_NAME = "Reg&PKCS7";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "fdae974a-3e9b-46a1-ae53-dafdfa509dda";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

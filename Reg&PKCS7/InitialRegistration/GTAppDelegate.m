@@ -9,6 +9,7 @@
 #import "GTAppDelegate.h"
 
 #import "StartViewController.h"
+#import <HockeySDK/HockeySDK.h>
 
 @implementation GTAppDelegate
 
@@ -21,6 +22,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"ea61c1c833214634bfdf8b388e93ff80"];
+    // Do some additional configuration if needed here
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator
+     authenticateInstallation];
+
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[StartViewController alloc] initWithNibName:@"StartViewController" bundle:nil] autorelease];
